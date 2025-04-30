@@ -17,7 +17,7 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['account_rm'],
+  remotes: ['home', 'motos'],
   shared: (libraryName: string, sharedConfig: SharedLibraryConfig) => {
     if (libraryName === 'primeng' || libraryName === 'primeicons') {
       return {
@@ -26,7 +26,6 @@ const config: ModuleFederationConfig = {
         strictVersion: true,
       };
     }
-
 
     return sharedConfig;
   },

@@ -1,9 +1,0 @@
-{
-  "name": "account_rm-e2e",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "projectType": "application",
-  "sourceRoot": "apps/account_rm-e2e/src",
-  "implicitDependencies": ["account_rm"],
-  "// targets": "to see all targets run: nx show project account_rm-e2e --web",
-  "targets": {}
-}

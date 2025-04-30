@@ -1,8 +1,8 @@
 export default {
-  displayName: 'account_rm',
+  displayName: 'motos',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/account_rm',
+  coverageDirectory: '../../coverage/apps/motos',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

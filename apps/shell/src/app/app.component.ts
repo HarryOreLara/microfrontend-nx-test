@@ -21,7 +21,6 @@ import { ButtonModule } from 'primeng/button';
     FormsModule,
     AvatarModule,
     ButtonModule,
-
     InputTextModule,
   ],
   selector: 'app-root',
@@ -30,7 +29,6 @@ import { ButtonModule } from 'primeng/button';
 })
 export class AppComponent {
   title = 'shell';
-
 
   menuOpen = false;
 

@@ -15,9 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "account_rm/Routes": [
-        "apps/account_rm/src/app/remote-entry/entry.routes.ts"
-      ]
+      "home/Routes": ["apps/home/src/app/remote-entry/entry.routes.ts"],
+      "motos/Routes": ["apps/motos/src/app/remote-entry/entry.routes.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

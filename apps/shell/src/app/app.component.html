@@ -3,7 +3,7 @@
   style="min-height: 84px"
 >
   <img
-    src="https://i.pinimg.com/736x/9c/fc/61/9cfc61ac47f410e84d78b9c4136622e7.jpg"
+    src="https://img.freepik.com/vector-premium/plantilla-logotipo-reparacion-automoviles-garaje-industria-automotriz_160069-74.jpg"
     alt="Image"
     height="40"
     class="mr-0 lg:mr-6"
@@ -26,22 +26,12 @@
     >
       <li>
         <a
-        routerLink="/"
+          routerLink="/"
           pRipple
           class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150"
         >
           <i class="pi pi-home mr-2"></i>
           <span>Home</span>
-        </a>
-      </li>
-      <li>
-        <a
-          routerLink="/account-rm"
-          pRipple
-          class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150"
-        >
-          <i class="pi pi-calendar mr-2"></i>
-          <span>Accounts</span>
         </a>
       </li>
 
@@ -57,7 +47,7 @@
           [hideOnOutsideClick]="true"
         >
           <i class="pi pi-users mr-2"></i>
-          <span>Customers</span>
+          <span>Motos</span>
           <i class="pi pi-angle-down ml-auto lg:ml-3"></i>
         </a>
         <ul
@@ -69,46 +59,17 @@
               class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150"
             >
               <i class="pi pi-user-plus mr-2"></i>
-              <span class="font-medium">Add New</span>
+              <span class="font-medium">Deportivas</span>
             </a>
           </li>
-          <li class="relative">
+          <li>
             <a
               pRipple
               class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150"
-              pStyleClass="@next"
-              enterClass="hidden"
-              enterActiveClass="scalein"
-              leaveToClass="hidden"
-              leaveActiveClass="fadeout"
-              [hideOnOutsideClick]="true"
             >
-              <i class="pi pi-search mr-2"></i>
-              <span class="font-medium">Search</span>
-              <i class="pi pi-angle-down ml-auto lg:-rotate-90"></i>
+              <i class="pi pi-user-plus mr-2"></i>
+              <span class="font-medium">Naked</span>
             </a>
-            <ul
-              class="list-none py-3 pl-3 m-0 lg:px-0 lg:py-0 border-round shadow-0 lg:shadow-2 lg:absolute bg-gray-900 hidden origin-top w-full lg:w-15rem cursor-pointer left-100 top-0 lg:border-1 border-gray-800"
-            >
-              <li>
-                <a
-                  pRipple
-                  class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150"
-                >
-                  <i class="pi pi-shopping-cart mr-2"></i>
-                  <span class="font-medium">Purchases</span>
-                </a>
-              </li>
-              <li class="relative">
-                <a
-                  pRipple
-                  class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150"
-                >
-                  <i class="pi pi-comments mr-2"></i>
-                  <span class="font-medium">Messages</span>
-                </a>
-              </li>
-            </ul>
           </li>
         </ul>
       </li>
@@ -117,15 +78,24 @@
       class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row"
     >
       <li class="flex-order-2 lg:flex-order-0">
-        <div class="flex px-6 p-3 lg:px-3 lg:py-2">
-          <span class="p-input-icon-left w-full">
-            <input
-              type="text"
-              pInputText
-              placeholder="Search"
-              class="bg-gray-800 text-gray-400 border-gray-800 w-full"
-            />
-          </span>
+        <div
+          class="bg-gray-900 px-3 sm:px-6 py-3 flex align-items-stretch justify-content-center sm:justify-content-end  text-sm"
+        >
+          <a
+            pRipple
+            class="text-white font-medium inline-flex align-items-center cursor-pointer px-3 hover:text-gray-200"
+          >
+            <i class="pi pi-sign-in mr-2 sm:mr-3 text-sm"></i>
+            <span>Iniciar Sesión</span>
+          </a>
+          <div class="text-white mx-1 sm:mx-2">|</div>
+          <a
+            pRipple
+            class="text-white font-medium inline-flex align-items-center cursor-pointer px-3 hover:text-gray-200"
+          >
+            <i class="pi pi-user mr-2 sm:mr-3 text-sm"></i>
+            <span>Crear una Cuenta</span>
+          </a>
         </div>
       </li>
       <li class="border-top-1 border-gray-800 lg:border-top-none">

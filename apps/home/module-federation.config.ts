@@ -4,10 +4,11 @@ import {
 } from '@nx/module-federation';
 
 const config: ModuleFederationConfig = {
-  name: 'account_rm',
+  name: 'home',
   exposes: {
-    './Routes': 'apps/account_rm/src/app/remote-entry/entry.routes.ts',
+    './Routes': 'apps/home/src/app/remote-entry/entry.routes.ts',
   },
+
   shared: (libraryName: string, sharedConfig: SharedLibraryConfig) => {
     if (libraryName === 'primeng' || libraryName === 'primeicons') {
       return {
