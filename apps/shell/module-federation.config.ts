@@ -1,4 +1,7 @@
-import { ModuleFederationConfig } from '@nx/module-federation';
+import {
+  ModuleFederationConfig,
+  SharedLibraryConfig,
+} from '@nx/module-federation';
 
 const config: ModuleFederationConfig = {
   name: 'shell',
@@ -15,6 +18,18 @@ const config: ModuleFederationConfig = {
    *
    */
   remotes: ['account_rm'],
+  shared: (libraryName: string, sharedConfig: SharedLibraryConfig) => {
+    if (libraryName === 'primeng' || libraryName === 'primeicons') {
+      return {
+        ...sharedConfig,
+        singleton: true,
+        strictVersion: true,
+      };
+    }
+
+
+    return sharedConfig;
+  },
 };
 
 /**

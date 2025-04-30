@@ -1,9 +1,23 @@
-import { ModuleFederationConfig } from '@nx/module-federation';
+import {
+  ModuleFederationConfig,
+  SharedLibraryConfig,
+} from '@nx/module-federation';
 
 const config: ModuleFederationConfig = {
   name: 'account_rm',
   exposes: {
     './Routes': 'apps/account_rm/src/app/remote-entry/entry.routes.ts',
+  },
+  shared: (libraryName: string, sharedConfig: SharedLibraryConfig) => {
+    if (libraryName === 'primeng' || libraryName === 'primeicons') {
+      return {
+        ...sharedConfig,
+        singleton: true,
+        strictVersion: true,
+      };
+    }
+
+    return sharedConfig;
   },
 };
 

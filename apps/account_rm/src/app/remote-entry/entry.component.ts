@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NxWelcomeComponent } from './nx-welcome.component';
-
+import { StyleClassModule } from 'primeng/styleclass';
+import { ButtonModule } from 'primeng/button';
 @Component({
-  imports: [CommonModule, NxWelcomeComponent],
   selector: 'app-account-rm-entry',
-  template: `<app-nx-welcome></app-nx-welcome>`,
+  templateUrl: './entry.component.html',
+  imports: [CommonModule, StyleClassModule, ButtonModule],
 })
 export class RemoteEntryComponent {}
