@@ -1,10 +1,11 @@
+import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 
 
 
 
 @Component({
-    imports: [],
+    imports: [CommonModule],
     selector: 'app-scooter',
     templateUrl: './scooter.component.html',
 })
