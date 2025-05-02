@@ -17,7 +17,7 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['home', 'motos', 'concesionarias'],
+  remotes: ['home', 'motos', 'concesionarias', 'login', 'register'],
   shared: (libraryName: string, sharedConfig: SharedLibraryConfig) => {
     if (libraryName === 'primeng' || libraryName === 'primeicons') {
       return {

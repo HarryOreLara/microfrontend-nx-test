@@ -1,0 +1,9 @@
+{
+  "name": "register-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/auth/register-e2e/src",
+  "implicitDependencies": ["register"],
+  "// targets": "to see all targets run: nx show project register-e2e --web",
+  "targets": {}
+}

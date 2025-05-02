@@ -1,0 +1,103 @@
+<div class="min-h-screen px-4 py-8 md:px-6 lg:px-8 bg-gray-900">
+  <div class="flex flex-wrap shadow-2">
+    <div class="w-full lg:w-6 px-0 py-4 lg:p-7">
+      <p-carousel
+        [value]="features"
+        indicatorStyleClass="hover:bg-primary-500"
+        [showNavigators]="false"
+      >
+        <ng-template let-feature pTemplate="item">
+          <div class="text-center">
+            <img src="{{ feature.image }}" alt="Image" class="mb-6 w-8" />
+            <div class="mx-auto font-medium text-xl mb-4 text-white-alpha-90">
+              {{ feature.title }}
+            </div>
+            <p class="m-0 text-white-alpha-80 line-height-3">
+              {{ feature.text }}
+            </p>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+    <div class="w-full lg:w-6 p-4 lg:p-7 bg-gray-700 border-round-2xl">
+      <div class="flex align-items-center justify-content-between mb-5">
+        <span class="text-2xl font-medium text-white-alpha-90"
+          >Iniciar Sesión</span
+        >
+        <a
+          routerLink="/register"
+          tabindex="0"
+          class="font-medium text-white hover:text-white-alpha-60 cursor-pointer transition-colors transition-duration-150 no-underline"
+          >Registrate</a
+        >
+      </div>
+      <div class="flex justify-content-between">
+        <button
+          pRipple
+          class="mr-2 w-6 font-medium border-1 surface-border surface-100 py-3 px-2 p-component hover:surface-200 active:surface-300 text-900 cursor-pointer transition-colors transition-duration-150 inline-flex align-items-center justify-content-center"
+        >
+          <i class="pi pi-facebook text-indigo-500 mr-2"></i>
+          <span>Facebook</span>
+        </button>
+        <button
+          pRipple
+          class="ml-2 w-6 font-medium border-1 surface-border surface-100 py-3 px-2 p-component hover:surface-200 active:surface-300 text-900 cursor-pointer transition-colors transition-duration-150 inline-flex align-items-center justify-content-center"
+        >
+          <i class="pi pi-google text-red-500 mr-2"></i>
+          <span>Google</span>
+        </button>
+      </div>
+      <p-divider align="center" styleClass="my-4">
+        <span class="text-600 font-normal text-sm">OR</span>
+      </p-divider>
+
+      <label for="email4" class="block text-white-alpha-60 font-medium mb-2"
+        >Email</label
+      >
+      <input
+        id="email4"
+        type="text"
+        placeholder="example@example.com"
+        pInputText
+        class="w-full mb-3 p-3"
+      />
+
+      <label for="password4" class="block text-white-alpha-60 font-medium mb-2"
+        >Password</label
+      >
+      <input
+        id="password4"
+        type="password"
+        placeholder="Password"
+        pInputText
+        class="w-full mb-3 p-3"
+      />
+
+      <div class="flex align-items-center justify-content-between mb-6">
+        <div class="flex align-items-center">
+          <p-checkbox
+            id="rememberme4"
+            [binary]="true"
+            styleClass="mr-2"
+          ></p-checkbox>
+          <label for="rememberme4" class="text-white-alpha-60"
+            >Recuerdame</label
+          >
+        </div>
+        <a
+          class="font-medium text-white hover:text-white-alpha-60 cursor-pointer transition-colors transition-duration-150"
+          >Olvidaste la contraseña?</a
+        >
+      </div>
+
+      <button
+        pButton
+        pRipple
+        class="w-full py-3 font-medium bg-black-alpha-60 border-white-alpha-60"
+        icon="pi pi-sign-in"
+      >
+        Iniciar Sesión
+      </button>
+    </div>
+  </div>
+</div>

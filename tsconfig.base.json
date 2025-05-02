@@ -19,7 +19,11 @@
         "apps/concesionarias/src/app/remote-entry/entry.routes.ts"
       ],
       "home/Routes": ["apps/home/src/app/remote-entry/entry.routes.ts"],
-      "motos/Routes": ["apps/motos/src/app/remote-entry/entry.routes.ts"]
+      "login/Routes": ["apps/auth/login/src/app/remote-entry/entry.routes.ts"],
+      "motos/Routes": ["apps/motos/src/app/remote-entry/entry.routes.ts"],
+      "register/Routes": [
+        "apps/auth/register/src/app/remote-entry/entry.routes.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
