@@ -1,11 +1,19 @@
-version: '3'
+version: '3.8'
 
 services:
-  shell:
-    container_name: shell
-    image: shell-gateway:dev
+  webapp:
     build:
       context: .
-      dockerfile: apps/shell/Dockerfile
+      dockerfile: Dockerfile
     ports:
-      - "4200:80"
+      - "80:80"
+    volumes:
+      - ./apps/shell/src:/app/apps/shell/src
+      - ./apps/home/src:/app/apps/home/src
+      - ./apps/motos/src:/app/apps/motos/src
+      - ./apps/concesionarias/src:/app/apps/concesionarias/src
+      - ./apps/auth/login/src:/app/apps/auth/login/src
+      - ./apps/auth/register/src:/app/apps/auth/register/src
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped

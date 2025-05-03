@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  shell:
+    container_name: shell
+    image: shell-gateway:dev
+    build:
+      context: .
+      dockerfile: apps/shell/Dockerfile
+    ports:
+      - "4200:80"
+
+  home:
+    container_name: home
+    image: home-gateway:dev
+    build:
+      context: .
+      dockerfile: apps/home/Dockerfile
+    ports:
+      - "4201:80"
+
+  motos:
+    container_name: motos
+    image: motos-gateway:dev
+    build:
+      context: .
+      dockerfile: apps/motos/Dockerfile
+    ports:
+      - "4202:80"
+
+  consesionarias:
+    container_name: consesionarias
+    image: consesionarias-gateway:dev
+    build:
+      context: .
+      dockerfile: apps/concesionarias/Dockerfile
+    ports:
+      - "4203:80"
